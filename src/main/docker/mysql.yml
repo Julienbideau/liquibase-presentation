@@ -1,13 +1,27 @@
-version: '2'
+version: '3'
 services:
-  techaway-mysql:
+  mysql:
     image: mysql:8.0.18
-    # volumes:
-    #     - ~/volumes/jhipster/techaway/mysql/:/var/lib/mysql/
+    volumes:
+      - .docker/data/db:/var/lib/mysql
     environment:
-      - MYSQL_USER=root
-      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
-      - MYSQL_DATABASE=techaway
+      MYSQL_USER: root
+      MYSQL_PASSWORD: techaway
+      MYSQL_DATABASE: techaway
+      MYSQL_ROOT_PASSWORD: techaway
     ports:
       - 3306:3306
-    command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8mb4 --explicit_defaults_for_timestamp
+    networks:
+      - default
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: sf4_phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - 8001:80
+    links:
+      - mysql
+volumes:
+  persistent:
