@@ -84,13 +84,13 @@ public class Department implements Serializable {
 
     public Department addEmployee(Employee employee) {
         this.employees.add(employee);
-        employee.setDepartment(this);
+      //  employee.setDepartment(this);
         return this;
     }
 
     public Department removeEmployee(Employee employee) {
         this.employees.remove(employee);
-        employee.setDepartment(null);
+   //     employee.setDepartment(null);
         return this;
     }
 
