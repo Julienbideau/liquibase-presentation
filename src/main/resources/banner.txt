@@ -7,4 +7,3 @@
   ${AnsiColor.GREEN}     |__|     ${AnsiColor.RED} |_______| \______||__|  |__| /__/     \__\     \__/  \__/     /__/     \__\     |__|
 
 ${AnsiColor.BRIGHT_BLUE}:: TechAway 🤓  :: Running Spring Boot ${spring-boot.version} ::
-:: https://www.jhipster.tech ::${AnsiColor.DEFAULT}

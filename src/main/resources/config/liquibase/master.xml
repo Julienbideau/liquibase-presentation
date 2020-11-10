@@ -13,19 +13,21 @@
     <property name="clobType" value="clob" dbms="mysql, oracle, mssql, mariadb, postgresql"/>
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
-    <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092723_added_entity_Region.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092724_added_entity_Country.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092725_added_entity_Location.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092726_added_entity_Department.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092727_added_entity_Task.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092728_added_entity_Employee.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092729_added_entity_Job.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092730_added_entity_JobHistory.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092724_added_entity_constraints_Country.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092725_added_entity_constraints_Location.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092726_added_entity_constraints_Department.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092728_added_entity_constraints_Employee.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092729_added_entity_constraints_Job.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20201016092730_added_entity_constraints_JobHistory.xml" relativeToChangelogFile="false"/>
+    <!--V1.0.0-->
+    <include file="config/liquibase/changelog/v1.0.0/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092723_added_entity_Region.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092724_added_entity_Country.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092725_added_entity_Location.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092726_added_entity_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092727_added_entity_Task.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092728_added_entity_Employee.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092724_added_entity_constraints_Country.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092725_added_entity_constraints_Location.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092726_added_entity_constraints_Department.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.0.0/20201016092728_added_entity_constraints_Employee.xml" relativeToChangelogFile="false"/>
+    <!--V1.1.0-->
+    <include file="config/liquibase/changelog/v1.1.0/20201016092729_added_entity_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.1.0/20201016092730_added_entity_JobHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.1.0/20201016092729_added_entity_constraints_Job.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/v1.1.0/20201016092730_added_entity_constraints_JobHistory.xml" relativeToChangelogFile="false"/>
 </databaseChangeLog>
