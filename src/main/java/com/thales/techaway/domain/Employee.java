@@ -55,6 +55,9 @@ public class Employee implements Serializable {
     @Column(name = "address")
     private Long address;
 
+    @Column(name = "test")
+    private Long test;
+
     @OneToMany(mappedBy = "employee")
     private Set<Job> jobs = new HashSet<>();
 
