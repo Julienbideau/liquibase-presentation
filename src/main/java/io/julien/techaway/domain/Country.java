@@ -20,9 +20,6 @@ public class Country implements Serializable {
     @Column(name = "country_name")
     private String countryName;
 
-    @Column(name = "president")
-    private String president;
-
     @OneToOne
     @JoinColumn
     private Region region;

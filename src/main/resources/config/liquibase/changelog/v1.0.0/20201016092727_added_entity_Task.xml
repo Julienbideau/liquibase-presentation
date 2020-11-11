@@ -12,7 +12,7 @@
         Added the entity Task.
     -->
     <changeSet id="20201016092727-1" author="julien.bideau">
-        <createTable tableName="task" remarks="Task entity.\n@author The JHipster team.">
+        <createTable tableName="task">
             <column name="id" type="bigint" autoIncrement="${autoIncrement}">
                 <constraints primaryKey="true" nullable="false"/>
             </column>

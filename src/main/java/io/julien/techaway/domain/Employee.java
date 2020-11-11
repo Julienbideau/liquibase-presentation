@@ -11,10 +11,6 @@ import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * The Employee entity.
- */
-@ApiModel(description = "The Employee entity.")
 @Entity
 @Data
 @Builder
@@ -27,9 +23,6 @@ public class Employee implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    /**
-     * The firstname attribute.
-     */
     @Column(name = "first_name")
     private String firstName;
 
@@ -51,14 +44,9 @@ public class Employee implements Serializable {
     @Column(name = "commission_pct")
     private Long commissionPct;
 
-    @Column(name = "address")
-    private Long address;
-
-    @Column(name = "test")
-    private Long test;
 
     @OneToMany(mappedBy = "employee")
-    private Set<Job> jobs = new HashSet<>();
+    private Set<Job> jobs;
 
     @ManyToOne
     @JsonIgnoreProperties("employees")

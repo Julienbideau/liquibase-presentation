@@ -5,10 +5,6 @@ import javax.persistence.*;
 
 import java.io.Serializable;
 
-/**
- * not an ignored comment
- */
-@ApiModel(description = "not an ignored comment")
 @Entity
 @Table(name = "location")
 public class Location implements Serializable {

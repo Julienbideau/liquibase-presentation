@@ -8,10 +8,6 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * Task entity.\n@author The JHipster team.
- */
-@ApiModel(description = "Task entity.\n@author The JHipster team.")
 @Entity
 @Table(name = "task")
 public class Task implements Serializable {
