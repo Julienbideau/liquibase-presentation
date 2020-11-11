@@ -14,7 +14,7 @@ class ArchTest {
 
         JavaClasses importedClasses = new ClassFileImporter()
             .withImportOption(ImportOption.Predefined.DO_NOT_INCLUDE_TESTS)
-            .importPackages("com.thales.techaway");
+            .importPackages("io.julien.techaway");
 
         noClasses()
             .that()
@@ -22,7 +22,7 @@ class ArchTest {
             .or()
                 .resideInAnyPackage("..repository..")
             .should().dependOnClassesThat()
-                .resideInAnyPackage("..com.thales.techaway.web..")
+                .resideInAnyPackage("..io.julien.techaway.web..")
         .because("Services and repositories should not depend on web layer")
         .check(importedClasses);
     }

@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: INFO
     io.github.jhipster: INFO
-    com.thales.techaway: INFO
+    io.julien.techaway: INFO
 
 management:
   metrics:
