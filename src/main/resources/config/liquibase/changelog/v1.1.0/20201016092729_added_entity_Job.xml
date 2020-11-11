@@ -28,7 +28,6 @@
             <column name="employee_id" type="bigint">
                 <constraints nullable="true" />
             </column>
-            <!-- julien.bideau-needle-liquibase-add-column - JHipster will add columns here, do not remove-->
         </createTable>
     </changeSet>
 

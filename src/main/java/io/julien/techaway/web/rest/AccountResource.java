@@ -8,7 +8,6 @@ import io.julien.techaway.service.MailService;
 import io.julien.techaway.service.UserService;
 import io.julien.techaway.service.dto.PasswordChangeDTO;
 import io.julien.techaway.service.dto.UserDTO;
-import com.thales.techaway.web.rest.errors.*;
 import io.julien.techaway.web.rest.errors.EmailAlreadyUsedException;
 import io.julien.techaway.web.rest.errors.EmailNotFoundException;
 import io.julien.techaway.web.rest.errors.InvalidPasswordException;

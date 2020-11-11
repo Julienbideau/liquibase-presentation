@@ -1,7 +1,5 @@
 package io.julien.techaway.config;
 
-import com.thales.techaway.security.*;
-import com.thales.techaway.security.jwt.*;
 
 import io.julien.techaway.security.AuthoritiesConstants;
 import io.julien.techaway.security.jwt.JWTConfigurer;
